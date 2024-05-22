@@ -1,0 +1,16 @@
+form {
+    margin: 30px 500px 30px 500px;
+    height: 500px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+
+}
+
+input[type="Submit"]{
+    background-color: blueviolet; 
+}
