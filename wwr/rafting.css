@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+:root{
+    color-scheme: 0077b6;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -12,28 +23,29 @@ body {
     margin: 0 auto; 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(color-scheme);
 header{
-    height: 200px;
     display: grid;
-    grid-template-columns: 2fr;
     justify-items: center;
     background-color: steelblue;
 }
 
+p {
+    color: var(--text-color); 
 header img{
     justify-self: flex-start;
 
     width: 100px;
-    height: 150px;
+    height: auto;
     max-width: 100%;
     border: #000;
 }
 
 nav{
-    height: 10px;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -81,12 +93,19 @@ article{
 }
 
 article img {
+    width: 100px; 
+    height: auto; 
+    display: block; 
     max-width: 200px; 
     max-height: auto; 
     display: flex; 
     margin: 0 auto 10px; 
     float: right;
 }
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
 
 footer{
     margin-top: 10px;
@@ -96,6 +115,9 @@ footer{
     align-items: flex-end;
     text-align: right;
 }
+.hero h1 {
+    position: absolute;
+    font-size: 36px;
 
 section{
     grid-column: 2/3;
@@ -111,36 +133,3 @@ section img{
     max-width: 120px;
     height: auto;
 }
-
-form{
-    margin: 10px 220px 10px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 15px;
-    background-color: darkgray;
-}
-
-input[type="button"]{
-    padding: 10px;
-}
-
-
-.employees {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.employees img{
-    margin: 15px 500px 10px 10px;
-}
-
-main{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-
-}
-
