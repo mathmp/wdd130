@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.box{
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
-:root{
-    color-scheme: 0077b6;
+:root {
+    --text-color: #000;
 }
 
 body {
@@ -23,35 +17,31 @@ body {
     margin: 0 auto; 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(color-scheme);
-header{
+header {
     height: 200px;
-    display: grid;
-    grid-template-columns: 2fr;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: steelblue;
 }
 
-p {
-    color: var(--text-color); 
-header img{
-    justify-self: flex-start;
-
+header img {
+    justify-self: start;
     width: 100px;
-    height: auto;
+    height: 150px;
     max-width: 100%;
     border: #000;
 }
 
-nav{
+nav {
+    height: 10px;
     padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav a{
+nav a {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
@@ -65,7 +55,7 @@ nav a{
     width: 100%;
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -77,12 +67,12 @@ h1 {
     margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
-    color-scheme: var(rgb(235, 235, 240));
+    color: rgb(10, 10, 12);
 }
 
-article{
+article {
     position: absolute; 
     top: 20px; 
     left: 20px; 
@@ -95,21 +85,13 @@ article{
 }
 
 article img {
-    width: 100px; 
-    height: auto; 
-    display: block; 
     max-width: 200px; 
-    max-height: auto; 
     display: flex; 
     margin: 0 auto 10px; 
     float: right;
 }
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
 
-footer{
+footer {
     margin-top: 10px;
     border-top: 1px solid #000;
     display: flex;
@@ -117,21 +99,61 @@ footer{
     align-items: flex-end;
     text-align: right;
 }
-.hero h1 {
-    position: absolute;
-    font-size: 36px;
 
-section{
-    grid-column: 2/3;
+section {
     margin: 5rem;
 }
 
-p{
+p {
     text-indent: 10px;
     margin-bottom: 20px;
 }
 
-section img{
-    max-width: 120px;
+section img {
+    max-width: 100px;
     height: auto;
+}
+
+.atalho {
+    margin: 5rem;
+}
+
+.atalho img{
+    max-width: 200px;
+}
+
+form {
+    margin: 10px 220px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: darkgray;
+}
+
+input[type="button"] {
+    padding: 10px;
+}
+
+.employees {
+    display: flex;
+    flex-direction: column;
+}
+
+.employees img {
+    margin: 15px 500px 10px 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.trips {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 750px;
 }
